@@ -1,0 +1,96 @@
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+#makeright {
+    float: right;
+}
+
+#navbar {
+    margin: 10px;
+    background-color: #372250;
+    padding: 10px;
+}
+
+nav div {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(170, 197, 255);
+    font-size: large;
+}
+
+#side40 {
+    display: inline-block;
+    background-color: rgb(190, 190, 255);
+    width: 40%;
+}
+
+#side60 {
+    display: inline;
+    background-color: rgb(180, 247, 186);
+    width: 60%;
+    float: right;
+}
+
+#elem {
+    background-color: cadetblue;
+    padding: 50px;
+    display: inline-block;
+}
+
+#mainbody {
+    display: block;
+}
+
+#myevents {
+    display: block;
+}
+
+#event {
+    background-color: crimson;
+    margin: auto;
+    margin-top: 5px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#side70 {
+    display: inline-block;
+    background-color: rgb(190, 190, 255);
+    width: 70%;
+}
+
+#side30 {
+    display: inline;
+    background-color: rgb(180, 247, 186);
+    width: 30%;
+    float: right;
+}
+
+#options {
+    background-color: darkkhaki;
+}
+
+#res {
+    background-color: rgb(255, 179, 160);
+    padding: 10px;
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#updates {
+    background-color: rgb(36, 4, 28);
+    padding: 5px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+}

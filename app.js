@@ -52,7 +52,7 @@ const adminRoutes =require('./routes/user/index');
 // const mongoURI = "mongodb://localhost/final_year_project_v1";
 // const mongoURI = "mongodb+srv://ankit:"+process.env.MLAB_PASS+"@cluster0-gyowo.mongodb.net/real_art?retryWrites=true&w=majority";
 // const mongoURI = "mongodb+srv://ankit:" + process.env.mongo_pass + "@cluster0.f8aql.mongodb.net/mravans_admin_v4?retryWrites=true&w=majority";
-const mongoURI ="mongodb+srv://kintu2676:"+process.env.mongo+pass+"@cluster0.kw5s2.mongodb.net/major_project?retryWrites=true&w=majority"
+const mongoURI ="mongodb+srv://kintu2676:"+process.env.mongo_pass+"@cluster0.kw5s2.mongodb.net/major_project?retryWrites=true&w=majority"
 //Mongo connection
 mongoose.connect(mongoURI);
 

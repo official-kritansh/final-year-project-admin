@@ -5,7 +5,7 @@ var router = express.Router({ mergeParams: true }),
     { f1Auth,f2Auth } = require("../../controller/user/auth"),
     { isAdmin } = require("../../middleware/index");
 // @route to register page
-// Admin.register(new Admin({email:'kintu2676@gmail.com',placement_code:'dsce-1155-77552-777'}), '1234', (err, admin) => {
+// Admin.register(new Admin({email:'kintu2676@gmail.com',pcode:'dsce-1155-77552-777'}), '1234', (err, admin) => {
 //     if (err) {
 //         console.log(err)
 //     }else{

@@ -2,7 +2,7 @@ const express = require("express");
 var router = express.Router({ mergeParams: true }),
     passport = require("passport"),
     Admin = require("../../models/admin"),
-    { f1,f2 ,f3,f4,f5,f6,f7,f8,f9,f10,f11} = require("../../controller/user/index"),
+    { f1,f2 ,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13} = require("../../controller/user/index"),
     { isAdmin } = require("../../middleware/index");
 
 
@@ -27,5 +27,9 @@ router.post('/select-candidates',isAdmin,f9);
 router.get('/candidate-profile',isAdmin,f10);
 
 router.get('/close',isAdmin,f11);
+
+router.get('/delete-content/:pid/:uid',isAdmin,f12);
+
+router.get('/delete-file/:pid/:fid',isAdmin,f13);
 
 module.exports =router;

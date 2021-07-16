@@ -104,7 +104,14 @@ body {
 .wrapper {	
 	margin-top: 80px;
   margin-bottom: 80px;
+
 }
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+  display: block;
+}
+
 
 .form-signin {
   max-width: 380px;
@@ -141,3 +148,10 @@ body {
 	  border-top-right-radius: 0;
 	}
 
+#totheleft{
+    float: left;
+}
+
+#totheright{
+    float: right;
+}

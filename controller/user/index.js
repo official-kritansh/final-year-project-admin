@@ -248,5 +248,44 @@ module.exports ={
             await program.save();
             res.redirect('/')
         })
+    },
+
+    f12(req,res){
+        Placement.findOne({pid:req.params.pid,status:'OPEN'}).exec(async(err,program)=>{
+            if(err){
+                req.flash("error","Something went wrong!")
+                return res.redirect("/"); 
+            }
+            if(!program){
+                req.flash("error","Something went wrong!")
+                return res.redirect("/");  
+            }
+            program.updates= program.updates.filter((e)=>{
+                return e!=req.params.uid;
+            })
+            await program.save();
+            res.redirect('back')
+        })
+    },
+
+    f13(req,res){
+        Placement.findOne({pid:req.params.pid,status:'OPEN'}).exec(async(err,program)=>{
+            if(err){
+                req.flash("error","Something went wrong!")
+                return res.redirect("/"); 
+            }
+            if(!program){
+                req.flash("error","Something went wrong!")
+                return res.redirect("/");  
+            }
+            if(program.files && program.files.length>1){
+                program.files= program.files.filter((e)=>{
+                    return e._id!=req.params.fid;
+                })
+                await program.save();
+            }
+     
+            res.redirect('back')
+        })
     }
 }
